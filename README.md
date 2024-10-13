@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @alecia-taylor
 - 👀 I’m interested in Data Analytics, Digital Forensics, Project Management and Software Engineering
 - 🌱 I’m currently studying for my CompTIA Security+, and CSM
-- 💞️ I’m looking to collaborate on fun and challengng projects
+- 💞️ I’m looking to collaborate on fun and challenging projects
 - 📫 Reach me by messaging me on Linkedin or shoot me an email: alecia.taylor0@gmail.com
 - 😄 Pronouns: She/Her
 - ⚡ Fun fact: ...
