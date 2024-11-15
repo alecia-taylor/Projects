@@ -1,10 +1,10 @@
 - 👋 Hi, I’m @alecia-taylor
-- 👀 I’m interested in Consulting, Digital Forensics, and Project Management 
-- 🌱 I’m currently training for my CompTIA Security+, and CSM
+- 👀 I’m interested in Cyber Security Consulting,  Cyber Security Auditing, and Digital Forensic
+- 🌱 ISC2 CC certified. Constantly learning.
 - 💞️ I’m looking to collaborate on fun and challenging projects
 - 📫 Reach me by messaging me on Linkedin or shoot me an email: alecia.taylor0@gmail.com
 - 😄 Pronouns: She/Her
-- ⚡ Fun fact: ...
+- ⚡ 
 
 <!---
 alecia-taylor/alecia-taylor is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
