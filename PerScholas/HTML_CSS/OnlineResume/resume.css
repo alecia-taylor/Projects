@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.resume-container {
+    display: flex;
+    width: 800px;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border: 2px solid #333;
+}
+.sidebar {
+    width: 30%;
+    background: #1e3550;
+    color: white;
+    padding: 20px;
+}
+.sidebar h2 {
+    border-bottom: 2px solid white;
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+.profile-img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sidebar p, .sidebar ul {
+    font-size: 14px;
+    margin: 10px 0;
+}
+.sidebar ul {
+    list-style-type: none;
+}
+.sidebar ul li {
+    padding: 5px 0;
+}
+.main-content {
+    width: 70%;
+    padding: 20px;
+}
+.header {
+    text-align: left;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+.header h1 {
+    font-size: 24px;
+}
+.bold {
+    font-weight: bold;
+}
+.profile, .experience, .reference {
+    margin-top: 20px;
+}
+.profile p {
+    font-size: 14px;
+}
+.experience .job {
+    margin-bottom: 15px;
+}
+.experience .job p {
+    font-size: 14px;
+}
+.experience ul {
+    margin: 5px 0 10px 20px;
+}
+.progress-container {
+    margin: 10px 0;
+}
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.progress-bar {
+    height: 8px;
+    background: #ddd;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #333;
+}
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background: #333;
+}
+.reference p {
+    font-size: 14px;
+    margin-top: 10px;
+}
