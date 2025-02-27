@@ -24,11 +24,12 @@ console.log(allDivisibleBy5); // false
 const isFirstBigger = n1 > n4;
 console.log(isFirstBigger); // false
 
-// Do the math chain
+// Arithmic chain
 let result = n2 - n1; // Subtract first from second. 14 - 8 = 6
 result = result * n3;  // Multiply by third. 6 * 9 = 54
 result = result % n4;  // Find remainder when divided by fourth // 54 % 19 = 16
 console.log(result); // 16
+
 
 
 
