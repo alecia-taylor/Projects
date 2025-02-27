@@ -1,3 +1,4 @@
+// Part 1
 // The initial numbers that must be verified.
 const n1 = 10;
 const n2 = 15;
