@@ -1,5 +1,5 @@
 // Part 1
-// The initial numbers that must be verified.
+// The initial numbers that must be verified
 const n1 = 8;
 const n2 = 14;
 const n3 = 9;
@@ -14,15 +14,23 @@ console.log("Next, add " + n3 + ": " + sumStep2);
 
 const sum = sumStep2 + n4; // 31 + 19 = 50
 console.log("Finally, add " + n4 + ": " + sum);
-const isSum50 = (n1 + n2 + n3 + n4) == 50;
+const isSum50 = (n1 + n2 + n3 + n4) == 50; // true
 
 // Check if all numbers are divisible by 5
-const allDivisibleBy5 = (n1 % 5 === 0) && (n2 % 5 === 0) && (n3 % 5 === 0) && (n4 % 5 === 0);
-console.log(allDivisibleBy5);
+const allDivisibleBy5 = (n1 % 5 === 0) && (n2 % 5 === 0) && (n3 % 5 === 0) && (n4 % 5 === 0); 
+console.log(allDivisibleBy5); // false
 
 // Check if first number is bigger than last number
 const isFirstBigger = n1 > n4;
-console.log(isFirstBigger);
+console.log(isFirstBigger); // false
+
+// Do the math chain
+let result = n2 - n1; // Subtract first from second. 14 - 8 = 6
+result = result * n3;  // Multiply by third. 6 * 9 = 54
+result = result % n4;  // Find remainder when divided by fourth // 54 % 19 = 16
+console.log(result); // 16
+
+
 
 
 
