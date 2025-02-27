@@ -6,8 +6,14 @@ const n3 = 9;
 const n4 = 19;
 
 // Check one: add up to 50
-// This is a fairly simple operation using
-// arithmetic operators and a comparison.
+const sumStep1 = n1 + n2; // 8 + 14 = 22
+console.log("First, add " + n1 + " and " + n2 + ": " + sumStep1);
+
+const sumStep2 = sumStep1 + n3; // 22 + 9 = 31
+console.log("Next, add " + n3 + ": " + sumStep2);
+
+const sum = sumStep2 + n4; // 31 + 19 = 50
+console.log("Finally, add " + n4 + ": " + sum);
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
 
 // Check two: at least two odd numbers
