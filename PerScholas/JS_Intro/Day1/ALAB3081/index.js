@@ -5,7 +5,7 @@ const n2 = 14;
 const n3 = 9;
 const n4 = 19;
 
-// Check one: add up to 50
+// Check if numbers add up to 50
 const sumStep1 = n1 + n2; // 8 + 14 = 22
 console.log("First, add " + n1 + " and " + n2 + ": " + sumStep1);
 
@@ -19,6 +19,12 @@ const isSum50 = (n1 + n2 + n3 + n4) == 50;
 // Check if all numbers are divisible by 5
 const allDivisibleBy5 = (n1 % 5 === 0) && (n2 % 5 === 0) && (n3 % 5 === 0) && (n4 % 5 === 0);
 console.log(allDivisibleBy5);
+
+// Check if first number is bigger than last number
+const isFirstBigger = n1 > n4;
+console.log(isFirstBigger);
+
+
 
 
 // Check two: at least two odd numbers
