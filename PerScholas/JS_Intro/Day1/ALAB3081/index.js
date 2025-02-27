@@ -16,6 +16,11 @@ const sum = sumStep2 + n4; // 31 + 19 = 50
 console.log("Finally, add " + n4 + ": " + sum);
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
 
+// Check if all numbers are divisible by 5
+const allDivisibleBy5 = (n1 % 5 === 0) && (n2 % 5 === 0) && (n3 % 5 === 0) && (n4 % 5 === 0);
+console.log(allDivisibleBy5);
+
+
 // Check two: at least two odd numbers
 // Here, we use modulus to check if something is odd.
 // Since % 2 is 0 if even and 1 if odd, we can use
