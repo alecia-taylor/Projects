@@ -39,40 +39,35 @@ console.log("Is first number bigger than last:", isFirstBigger); // false
 console.log("Final result:", result); // 16
 console.log("Is result 25 or less:", isUnderOr25); // true
 
-// Part 2
+// Part 2 
 // Provided data
 const totalDistance = 1500; // miles
 const fuelBudget = 175; // How much money we have for fuel
 const fuelCostPerGallon = 3; // dollars per gallon
 const milesPerGallon = 30; // How far our car goes with one gallon of fuel!
 
-// Fuel efficiency at different speeds (miles per gallon)
-const fuelEfficiency = {
-  55: 30,
-  60: 28,
-  75: 23
+//  How many gallons of fuel will you need for the entire trip? 
+const fuelEfficiency = { // miles per gallon at different speeds
+  55: 30, // 30 miles per gallon at 55 mph
+  60: 28, // 28 miles per gallon at 60 mph
+  75: 23, // 23 miles per gallon at 75 mph
 };
 
-// Do I have enough money?
+// Will your budget be enough? Do I have enough money?
 const isBudgetEnough = fuelCostPerGallon <= fuelBudget; // 3 <= 175, true 
 
+// How long will the trip take, in hours? Calculated travel time for each speed
+const time1 = totalMiles / speed1; // 1500 / 55 = 27.27 hours
+const time2 = totalMiles / speed2; // 1500 / 60 = 25.00 hours
+const time3 = totalMiles / speed3; // 1500 / 75 = 20.00 hours
 
-// Part 2: Practical Math
-// Let’s look at a more practical scenario.
-// You are planning a cross-country road trip!
+// // Comparing the results when traveling at an average of 55, 60, and 75 miles per hour.
+console.log("At " + speed1 + " mph, the trip will take " + time1 + " hours."); // 27.27 hours
+console.log("At " + speed2 + " mph, the trip will take " + time2 + " hours."); // 25.00 hours
+console.log("At " + speed3 + " mph, the trip will take " + time3 + " hours."); // 20.00 hours
 
-// The distance of the trip, in total, is 1,500 miles.
-// Your car’s fuel efficiency is as follows:
-// At 55 miles per hour, you get 30 miles per gallon.
-// At 60 miles per hour, you get 28 miles per gallon.
-// At 75 miles per hour, you get 23 miles per gallon.
-// You have a fuel budget of $175.
-// The average cost of fuel is $3 per gallon.
+// Which makes the most sense for the trip?
+const bestSpeed = speed3; // 75 mph
+const bestTime = time3; // 20 hours
 
-// Set up a program to answer the following questions:
-// How many gallons of fuel will you need for the entire trip?
-// Will your budget be enough to cover the fuel expense?
-// How long will the trip take, in hours?
-// Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the
-// most sense for the trip?
-// Log the results of your calculations using string concatenation or template literals.
+//Part 3
