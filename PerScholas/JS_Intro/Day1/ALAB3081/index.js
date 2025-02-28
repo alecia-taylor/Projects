@@ -14,10 +14,10 @@ console.log("Next, add " + n3 + ": " + sumStep2);
 
 const sum = sumStep2 + n4; // 31 + 19 = 50
 console.log("Finally, add " + n4 + ": " + sum);
-const isSum50 = (n1 + n2 + n3 + n4) == 50; // true
+const isSum50 = (n1 + n2 + n3 + n4) == 50; // true 
 
 // Check if all numbers are divisible by 5
-const allDivisibleBy5 = (n1 % 5 === 0) && (n2 % 5 === 0) && (n3 % 5 === 0) && (n4 % 5 === 0); 
+const allDivisibleBy5 = (n1 % 5 === 0) && (n2 % 5 === 0) && (n3 % 5 === 0) && (n4 % 5 === 0); // we use === to compare the value and the type
 console.log(allDivisibleBy5); // false
 
 // Check if first number is bigger than last number
