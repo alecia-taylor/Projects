@@ -30,7 +30,7 @@ result = result * n3;  // Multiply by third. 6 * 9 = 54
 result = result % n4;  // Find remainder when divided by fourth // 54 % 19 = 16
 console.log(result); // 16
 
-// Change isOver25 logic so no NOT (!) is needed
+// Change isOver25 logic so no (!) is needed
 const isUnderOr25 = result <= 25;
 
 console.log("All numbers divisible by 5:", allDivisibleBy5); // false
@@ -38,3 +38,10 @@ console.log("Is sum 50:", isSum50); // true
 console.log("Is first number bigger than last:", isFirstBigger); // false
 console.log("Final result:", result); // 16
 console.log("Is result 25 or less:", isUnderOr25); // true
+
+// Part 2
+// Provided data
+const totalDistance = 1500; // miles
+const fuelBudget = 175; // dollars
+const fuelCostPerGallon = 3; // dollars per gallon
+
