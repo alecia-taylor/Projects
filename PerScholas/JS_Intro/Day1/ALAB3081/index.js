@@ -44,4 +44,10 @@ console.log("Is result 25 or less:", isUnderOr25); // true
 const totalDistance = 1500; // miles
 const fuelBudget = 175; // dollars
 const fuelCostPerGallon = 3; // dollars per gallon
-
+ 
+// Fuel efficiency at different speeds (miles per gallon)
+const fuelEfficiency = {
+  55: 30,
+  60: 28,
+  75: 23
+};
