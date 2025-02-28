@@ -70,4 +70,5 @@ console.log("At " + speed3 + " mph, the trip will take " + time3 + " hours."); /
 const bestSpeed = speed3; // 75 mph
 const bestTime = time3; // 20 hours
 
-//Part 3
+// Part 3
+
