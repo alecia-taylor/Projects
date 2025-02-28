@@ -42,12 +42,16 @@ console.log("Is result 25 or less:", isUnderOr25); // true
 // Part 2
 // Provided data
 const totalDistance = 1500; // miles
-const fuelBudget = 175; // dollars
+const fuelBudget = 175; // How much money we have for fuel
 const fuelCostPerGallon = 3; // dollars per gallon
- 
+const milesPerGallon = 30; // How far our car goes with one gallon of fuel!
+
 // Fuel efficiency at different speeds (miles per gallon)
 const fuelEfficiency = {
   55: 30,
   60: 28,
   75: 23
 };
+
+// Do I have enough money?
+const isBudgetEnough = fuelCostPerGallon <= fuelBudget; // 3 <= 175, true
