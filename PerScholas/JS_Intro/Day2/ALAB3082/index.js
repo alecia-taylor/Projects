@@ -10,33 +10,37 @@
    const plantSpace = 0.8; // The required space for each plant
    let numberOfWeeksPassed = 0; // The number of weeks that have passed
 
+   
    console.log("Welcome to the Plant Growth Control System!");
    console.log("The garden has a total space of " + area + " square meters.");
 
-    // Calculate the maximum number of plants that can fit in the garden
-    while(numberOfWeeksPassed < 3) {    
+   while (numberOfWeeksPassed < 4) {
+      // Calculate the maximum number of plants that can fit in the garden
       numberOfWeeksPassed =  numberOfWeeksPassed + 1;
-      numberOfPlants = numberOfPlants * 2 // Plants double in size every week
+      numberOfPlants = numberOfPlants * 2; // Plants double in size every week
       console.log("--------" + numberOfWeeksPassed + " week(s) has passed. Here are the results--------");
-      console.log("Garden Space: " + area + " square feet"); 
       console.log("Number of Weeks: " + numberOfWeeksPassed);
       console.log("Number of plants " + numberOfPlants); 
       console.log("Total Plant Space: " + plantSpace * numberOfPlants + " square feet");
-    }
 
-    const pruned = 0.8 * area; // 80% of total are is 62.8
-// Has plant space exceeded 80% of the garden space?
-    if (plantSpace * numberOfPlants > pruned) {
-      console.log("The plants have exceeded 80% of the garden space. Prune the plants to prevent overcrowding.");
-    } else if (plantSpace * numberOfPlants < pruned) {
-      console.log("The plants are growing at an acceptable rate.");
-    } else {
-      console.log("There is room to plant more plants.");
-    }
- if (plantSpace * numberOfPlants < 0.5 * area) {
-      console.log("There is room to plant more plants");
-    }
- 
+      const pruned = 0.8 * area; // 80% of total are is 62.8 sq ft
+      let currentPlantSpace = plantSpace * numberOfPlants //
+      if (currentPlantSpace > pruned) {    
+        console.log ("Too many plants in the space. Please prune");
+      }//false
+
+      // const monitored = 
+      const planted = 0.5 * area; //50% of the total area, 39.25 sq ft
+      if (currentPlantSpace > planted && currentPlantSpace < pruned){
+        console.log ("Plants are growing at a good rate!")
+      }
+
+      // const planted
+      if (currentPlantSpace < planted){
+        console.log ("Uh oh! It's time too add more plants")
+      }
+    
+  }
 
 // Pruned, to stop the plants from exceeding the capacity of the garden.
 // This condition should be met if the plant count after 
