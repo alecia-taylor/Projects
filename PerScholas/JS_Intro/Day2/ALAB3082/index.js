@@ -3,8 +3,20 @@
 // Part 1
   //Provided data
    const PI = 3.14; // The value of PI
-   const area = PI * radius * radius; // The formula for the area of a circle
-   const growthRate = numberOfweeks; // The growth rate of the plant
+   const radius = 5;  // The radius of the circle
+   const area = PI * radius * radius; // The total area is 78.5 square feet
 
    let numberOfPlants = 20; // The number of plants we started with
+   let plantSpace = 0.8; // The required space for each plant
+   let numberOfWeeksPassed = 0; // The number of weeks that have passed
+
+   console.log("Welcome to the Plant Growth Control System!");
+   console.log("The garden has a total space of " + area + " square meters.");
+
+   function isThereEnoughSpace(numberOfPlants, plantSpace) {
+     return (numberOfPlants * plantSpace) <= area;
+   }
+
+
+
 
