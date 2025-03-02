@@ -48,5 +48,9 @@
    currentPlantSpace = numberOfPlants^numberOfWeeksPassed  // The required space for each plant = 1024
    let newRadius = Math.sqrt(currentPlantSpace / PI); // new radius = 18.02
 
-
-
+   //Part 3
+   
+   
+ //The scientists decided not to listen to your recommendations, and have instead started with 100 plants in the original 5-meter-radius garden. 
+ // Use try and catch to wrap your work in an error-handling block. 
+ // If the amount of space required to hold the originally provided number of plants exceeds the amount of space available, throw a new error and log an appropriate message.
