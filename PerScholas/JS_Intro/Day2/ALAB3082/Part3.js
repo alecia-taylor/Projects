@@ -44,14 +44,9 @@
    
      try {
       if (currentPlantSpace > area) {
-        throw new Error ("The starting number of plants exceeds the amount of space available");
+        throw new Error ("The number of plants exceeds the amount of space available");
       } 
      } catch (error) {
         console.log (error.message);
      }
  }
-
-
-//The scientists decided not to listen to your recommendations, and have instead started with 100 plants in the original 5-meter-radius garden. 
-// Use try and catch to wrap your work in an error-handling block. 
-// If the amount of space required to hold the originally provided number of plants exceeds the amount of space available, throw a new error and log an appropriate message.
