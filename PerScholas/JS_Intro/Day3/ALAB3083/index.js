@@ -19,3 +19,37 @@ for (let x = 1; x <= 100; x++) {
         console.log(x);
     }
 }
+
+//Part 2
+// This function checks if a number is a prime number
+function isPrime(num) {
+    // If the number is less than 2, it is not a prime number
+    if (num < 2) return false;
+    
+    // Check if the number can be divided evenly by any number from 2 to its square root
+    for (let x = 2; x <= Math.sqrt(num); x++) {
+        // If it can be divided without remainder, it's not a prime
+        if (Math.floor(num / x) === num / x) return false;
+    }
+    
+    // If no numbers divided it, then it is a prime
+    return true;
+}
+
+// This function finds the next prime number after a given number
+function nextPrime(n) {
+    // Start checking from the next number
+    let candidate = n + 1;
+    
+    // Keep checking numbers until we find a prime
+    while (true) {
+        // If the number is a prime, print it and stop
+        if (isPrime(candidate)) {
+            console.log(candidate);
+            break; // Stop looking once we find a prime
+        }
+        
+        // If it's not prime, try the next number
+        candidate++;
+    }
+}
