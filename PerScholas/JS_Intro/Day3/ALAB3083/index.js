@@ -1,6 +1,3 @@
-//Part 1
-/// Part 1: Fizz Buzz
-// We count from 1 to 100 and check each number
 // Part 1: Fizz Buzz
 // We will count from 1 to 100 and check each number
 for (let x = 1; x <= 100; x++) {
@@ -65,3 +62,5 @@ function nextPrime(n) {
 // Example Usage
 let n = 4; // Change this number to test different cases
 nextPrime(n); // This will find and print the next prime number
+
+// Part 3: Feeling Loopy
