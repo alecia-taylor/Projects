@@ -16,6 +16,7 @@ Initialize a new git repository in a local project folder, and create a JavaScri
 Commit frequently! Every time something works, you should commit it. Remember, you can always go back to a previous commit if something breaks.
 Part 1: Refactoring Old Code
 When code is outdated or inefficient, it often goes through a process called “refactoring.” Refactoring code is the process of restructuring that code without changing its original behavior .
+
 For the first part of this assignment, revisit your code from ALAB 308.3.1, wherein you create a script that parsed CSVs. Now that you have knowledge of arrays and objects, how would you change your approach to this problem? Take a few minutes to examine and refactor the code before continuing.
 For reference, ALAB 308.3.1 is embedded below. The section on CSV parsing is “Part 3.” <String filePath = C:\Users\Zaire\Desktop\dev\alecia-taylor\PerScholas\JS_Intro\Day3\ALAB3083\instructions.md>
 
