@@ -26,46 +26,29 @@ for (let x = 1; x <= 100; x++) {
 }
 
 // Part 2: Prime Time
-// This function checks if a number is a prime number
-function isPrime(num) {
-    // If the number is less than 2, it is not a prime number
-    if (num < 2) return false;
-    
-    // Check if the number can be divided evenly by any number from 2 to its square root
-    for (let x = 2; x <= Math.sqrt(num); x++) {
-        // If num is divisible by x, it is not a prime number
-        if (num % x === 0) return false;
-    }
-    
-    // If no numbers divided it, then it is a prime
-    return true;
-}
+//Finding the next prime number after starting point.
+let n = 4; // Start looking from this number
+let candidate = n + 1; // Begin with the next number
 
-// This function finds the next prime number after a given number
-function nextPrime(n) {
-    // Start checking from the next number
-    let candidate = n + 1;
+while (true) {
+    let isPrime = true; // Assume the number is prime until proven otherwise
     
-    // Keep checking numbers until we find a prime
-    while (true) {
-        // If the number is a prime, print it and stop
-        if (isPrime(candidate)) {
-            console.log(candidate);
-            break; // Stop looking once we find a prime
+    if (candidate < 2) { // Numbers below 2 are not prime
+        isPrime = false;
+    } else {
+        // Check if the number has any divisors other than 1 and itself
+        for (let x = 2; x < candidate; x++) {
+            if (candidate % x === 0) { // If it's divisible, it's not prime
+                isPrime = false;
+                break; // No need to check further, exit loop early
+            }
         }
-        
-        // If it's not prime, try the next number
-        candidate++;
     }
+    
+    if (isPrime) { // If we found a prime, print it and stop the loop
+        console.log(candidate);
+        break;
+    }
+    candidate++; // Try the next number
 }
-
-// Example Usage
-let n = 4; // Change this number to test different cases
-nextPrime(n); // This will find and print the next prime number
-
-// Part 3: Feeling Loopy
- let data = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
-
- // Split the data into rows
- let rows = data.split("\n");
 
