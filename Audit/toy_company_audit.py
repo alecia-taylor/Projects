@@ -44,4 +44,3 @@ class BotiumToysAudit:
     audit.calculate_risk()
 
  if __name__ == "__main__":
-    main(
