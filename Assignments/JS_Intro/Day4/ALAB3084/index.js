@@ -15,3 +15,6 @@
 
  const bill = [ "98", "Bill", "Doctor’s Assistant", 26]
     console.log (bill);
+
+    //Part 2
+    
