@@ -15,6 +15,7 @@ A GitHub link to your completed project repository.
 Instructions
 Initialize a new git repository in a local project folder, and create a JavaScript file to contain your code. Complete the activities below. You may reference and repurpose any code you created for ALAB 308.3.1 - Loops and Iteration if you believe it would benefit you.
 Commit frequently! Every time something works, you should commit it. Remember, you can always go back to a previous commit if something breaks.
+
 Part 1: Refactoring Old Code
 When code is outdated or inefficient, it often goes through a process called “refactoring.” Refactoring code is the process of restructuring that code without changing its original behavior .
 
