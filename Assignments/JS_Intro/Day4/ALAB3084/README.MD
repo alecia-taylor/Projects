@@ -28,6 +28,7 @@ Begin with the following task:
 Declare a variable that stores the number of columns in each row of data within the CSV.
 Instead of hard-coding four columns per row, expand your code to accept any number of columns. This should be calculated dynamically based on the first row of data.
 For example, if the first row of data (the headings) has eight entries, your program should create eight entries per row. You can safely assume that all rows that follow will contain the same number of entries per row.
+
 After you have implemented the above:
 Store your results in a two-dimensional array.
 Each row should be its own array, with individual entries for each column.
@@ -37,6 +38,7 @@ Using the original CSV example data, here is what the result of this step should
 ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26
 becomes
 [["ID", "Name", "Occupation", "Age"], ["42", "Bruce", "Knight", "41"], ["57", "Bob", "Fry Cook", "19"], ["63", "Blaine", "Quiz Master", "58"], ["98", "Bill", "Doctor’s Assistant", "26"]]
+
 Part 3: Transforming Data
 While the data is now much more workable than it was in its string format, there is still a large amount of obscurity in the data itself. When we access an arbitrary index of the results array, it is impossible to know what that data is referring to without additional cross-referencing.
 In order to make it more obvious what the data is, we will transform our rows into objects.
@@ -50,6 +52,7 @@ For instance, the results of the example data above being passed through this st
 becomes
 [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" }, { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" }, { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" }, { id: "98", name: "Bill", occupation: "Doctor’s Assistant", age: "26" }]
 Important: While this functionality can be built into the original CSV parser you built in Part 2, we are intentionally creating two different algorithms to test different skillsets. Please leave these sections separate even if it would be more efficient to combine them.
+
 Part 4: Sorting and Manipulating Data
 It is important to know how to work with data in this format, an array of objects, as it is one of the most commonly used data formats in JavaScript.
 Using array methods, accomplish the following tasks, in order upon the result of Part 3:
@@ -61,6 +64,7 @@ Add the following object to the end of the array:
 So far, the results should look like this:
 [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" }, { id: "48", name: "Barry", occupation: "Runner", age: "25" }, { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" }, { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" }, { id: "7", name: "Bilbo", occupation: "None", age: "111" }]
 Finally, use the values of each object within the array and the array’s length property to calculate the average age of the group. This calculation should be accomplished using a loop.
+
 Part 5: Full Circle
 As a final task, transform the final set of data back into CSV format.
 There are a number of ways to do this; be creative!
