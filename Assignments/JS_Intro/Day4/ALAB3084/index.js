@@ -29,14 +29,14 @@ const result = [
  
 console.log(result);
 
-// Part 3: Sorting and Modifying the Data
+// Part 3
 result.pop(); // Remove the last entry (bill) from the array
 
 // Insert a new entry for Barry at index 1
 const barry = ["48", "Barry", "Runner", 25];
 const updatedArray = [
-    result[0],    // Keep the header row
-    barry,         // Insert Barry here
+    result[0], // Keep the header row
+    barry, // Insert Barry here
     ...result.slice(1) // Include the rest of the rows
 ];
 
@@ -45,10 +45,10 @@ updatedArray.push(["7", "Bilbo", "None", 111]);
 
 console.log("Updated list with Barry and Bilbo:", updatedArray);
 
-// Part 4: Calculating the Average Age
+// Part 4
 let totalAge = 0;
 updatedArray.slice(1).forEach(row => {
-    totalAge += parseInt(row[3]); // Extract age from the 4th column
+    totalAge += parseInt(row[3]); // Pull age from the 4th column
 });
 const averageAge = totalAge / (updatedArray.length - 1); // Exclude the header row from the count
 console.log("Average Age:", averageAge);
